@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pré Matricula</title>
+    <link rel="stylesheet" href="pre_matricula.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <span style="color: white; font-size: 24px; font-weight: bold;">CEEP Maringá</span>
+            <img src="./img/10.png" alt="logo adicional" style="height: 50px; margin-left: 10px;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="alunos.html">Alunos</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><input type="text" placeholder="Pesquisar"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="prematricula" class="prematricula">
+            <h2>Pré-Matrícula</h2>
+            <form>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required><br>
+                <label for="curso">Curso de Interesse:</label>
+                <select id="curso" name="curso" required>
+                    <option value="Enfermagem Integrado">Técnico em Enfermagem - Integrado</option>
+                    <option value="Enfermagem Subsequente"> Técnico em enfermagem - Subsequente</option>
+                    <option value="Mecatrônica">Técnico em Mecatrônica - Integrado</option>
+                    <option value="Desenvolvimento Subsequente"> Técnico em Desenvolvimento de Sistemas - Subsequente</option>
+                    <option value="Desenvolvimento Integrado">Técnico em Desenvolvimento de Sistemas - Integrado</option>
+                    <option value="Energia Integrado"> Técnico em Sistemas de Energia Renovável - Integrado</option>
+                    <option value="Trabalho Subsequente">Técnico em Segurança do Trabalho - Subsequente</option>
+                    <option value="Transações Subsequente">Técnico em Transações Imobiliárias Subsequente</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select><br>
+                <button type="submit">Enviar</button>
+            </form>
+            <a href="https://www.areadoaluno.seed.pr.gov.br/servicosaoaluno/pages/publico/login.jsf;jsessionid=WN3bKwOoxM_2a8A4GEn4S-o9C3zl6Z6H_4jRycTL.sseed75003?dswid=9714" class="confirm-button">Confirme sua matrícula</a>
+            <h3>AVISO!</h3>
+            <p>Só aperte em confirmar matricula caso tenha recebi o e-mail avisando sobre a classificação!</p>  
+                   </section>
+    </main>
+
+    <footer>
+        <img src="./img/Governo Paraná.png" alt="Logo do Governo do Paraná">
+        <img src="./img/logo-celepar.svg" alt="Logo da Celepar">
+        <p>CEEP Maringá - Centro Estadual de Educação Profissional. Rua Rouxinol, nº 599 - Jardim Olímpico, Maringá - PR</p>
+        <p>&copy; 2024 CEEP Maringá. Todos os direitos reservados.</p>
+    </footer>
+
+  
+</body>
+</html>

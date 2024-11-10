@@ -1,0 +1,221 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Estilo do Cabeçalho e Rodapé */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003366; /* Azul escuro */
+    color: white;
+    padding: 10px 20px; /* Ajustado para um layout mais compacto */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    height: 50px; /* Ajustado para a logo no cabeçalho */
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Conteúdo Principal */
+main {
+    padding-top: 80px; /* Espaço para o cabeçalho fixo */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #003366; /* Azul escuro */
+    margin-bottom: 20px;
+}
+
+/* Estilos para a seção de cursos em linha */
+.cursos {
+    padding: 20px 0;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os cursos */
+    justify-content: center; /* Centraliza os cursos */
+}
+
+.item {
+    width: 300px; /* Largura fixa para cada curso */
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.item h2 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+    color: #1a73e8;
+}
+
+.item p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Botão Saiba Mais */
+.item button {
+    padding: 8px 16px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.item button:hover {
+    background-color: #004d40;
+}
+
+/* Rodapé com informações institucionais */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .logo-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer img {
+    height: 50px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Ícone de chatbot Bob */
+.bob-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #003366;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.bob-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .bob-icon img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    header img, footer img {
+        height: 40px;
+    }
+
+    .item h2 {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}

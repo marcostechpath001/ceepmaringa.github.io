@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <!-- Cabeçalho fixo com menu -->
+    <header>
+        <div style="display: flex; align-items: center;">
+            <span style="color: white; font-size: 24px; font-weight: bold;">CEEP Maringá</span>
+            <img src="./img/10.png" alt="logo adicional" style="height: 50px; margin-left: 10px;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="alunos.html">Alunos</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="pre_matricula.html">Pré-Matrícula</a></li>
+                <li><a href="desenvolvedor.html">Desenvolvedor</a></li>
+                <li><input type="text" placeholder="Pesquisar"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Contato -->
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <p>Se você tem alguma dúvida, sugestão ou precisa de mais informações, preencha o formulário abaixo e entraremos em contato.</p>
+            
+            <form id="contatoForm">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <div class="button-container">
+                    <button type="button" class="send-btn" onclick="mostrarOpcoesEnvio()">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <div class="logo-container">
+            <img src="./img/Governo Paraná.png" alt="Logo do Governo do Paraná">
+            <img src="./img/logo-celepar.svg" alt="Logo da Celepar">
+        </div>
+        <p>CEEP Maringá - Centro Estadual de Educação Profissional. Rua Rouxinol, nº 599 - Jardim Olímpico, Maringá - PR</p>
+        <p>&copy; 2024 CEEP Maringá. Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+</html>

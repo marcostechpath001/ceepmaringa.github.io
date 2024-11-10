@@ -1,0 +1,196 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Cabeçalho fixo com menu */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003366;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Conteúdo principal */
+main {
+    padding-top: 80px;
+}
+
+/* Estilos da seção desenvolvedor */
+.desenvolvedor {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.desenvolvedor h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.desenvolvedor p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Formulário de contato do desenvolvedor */
+.desenvolvedor form {
+    display: flex;
+    flex-direction: column;
+}
+
+.desenvolvedor label {
+    margin-bottom: 5px;
+    color: #003366;
+}
+
+.desenvolvedor input[type="text"],
+.desenvolvedor input[type="email"],
+.desenvolvedor textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    font-size: 1em;
+    resize: vertical; /* Permite redimensionamento vertical no textarea */
+}
+
+.desenvolvedor input[type="text"]:focus,
+.desenvolvedor input[type="email"]:focus,
+.desenvolvedor textarea:focus {
+    border-color: #003366; /* Cor da borda ao focar */
+}
+
+/* Estilização do botão de enviar */
+.desenvolvedor .button-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 12px 24px; /* Tamanho do botão */
+    border-radius: 6px; /* Raio da borda */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s; /* Transições */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o texto dentro do botão */
+    font-size: 1.1em; /* Tamanho da fonte */
+    background-color: #0055a5; /* Cor de fundo do botão */
+    color: white;
+    border: none; /* Remover borda */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Efeito hover do botão */
+.button-container button:hover {
+    background-color: #0077cc; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Leve elevação */
+}
+
+/* Rodapé com informações institucionais */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .logo-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer img {
+    height: 50px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Ícone de chatbot Bob */
+.bob-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #003366;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.bob-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bob-chatbox input[type="text"] {
+        width: 70%;
+    }
+
+    .bob-chatbox button {
+        padding: 8px 16px;
+    }
+}

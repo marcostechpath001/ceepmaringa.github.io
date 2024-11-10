@@ -1,0 +1,153 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Cabeçalho fixo com menu */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003366;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+header nav ul li input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Conteúdo principal */
+main {
+    padding-top: 80px;
+}
+
+/* Estilos das seções */
+.alunos, .projetos, .eventos {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alunos h2, .projetos h2, .eventos h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.alunos p, .projetos p, .eventos p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.projetos .projeto, .eventos .evento {
+    margin-bottom: 20px;
+}
+
+.projetos .projeto h3, .eventos .evento h3 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* Rodapé com informações institucionais */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .logo-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer img {
+    height: 50px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Ícone de chatbot Bob */
+.bob-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #003366;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.bob-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bob-chatbox input[type="text"] {
+        width: 70%;
+    }
+
+    .bob-chatbox button {
+        padding: 8px 16px;
+    }
+}
